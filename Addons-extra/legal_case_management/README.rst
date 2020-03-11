@@ -19,7 +19,7 @@ Credits
 * Cybrosys Techno Solutions <https://www.cybrosys.com>
 
 Author
-------
+======
 
 Developer: Sayooj A O(odoo@cybrosys.com) @ Cybrosys
 Developer: Vinaya (odoo@cybrosys.com) @ Cybrosys
