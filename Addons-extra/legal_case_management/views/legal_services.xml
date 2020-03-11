@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="payment_tree_id" model="ir.ui.view">
+        <field name="name">Payment Types Tree</field>
+        <field name="model">fee.types</field>
+        <field name="arch" type="xml">
+            <tree string="Payment Types">
+                <field name="fee_name"/>
+                <field name="fee_amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="payment_form_id" model="ir.ui.view">
+        <field name="name">Fee Types</field>
+        <field name="model">fee.types</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="fee_name"/>
+                        </group>
+                        <group>
+                            <field name="fee_amount"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_payment_form" model="ir.actions.act_window">
+        <field name="name">Fee Types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fee.types</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
